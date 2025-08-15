@@ -8,36 +8,9 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   
 
-    <script type="module" crossorigin src="/2025_week6/assets/main-CT7iCOp1.js"></script>
-    <link rel="stylesheet" crossorigin href="/2025_week6/assets/main-CmHo0ylH.css">
   </head>
   <body>
-    <nav class="navbar navbar-expand-lg navbar-light border-bottom py-3">
-  <div class="container">
-    <a class="navbar-brand" href="#">
-        <img src="/2025_week6/assets/logo-CRTeTChE.svg" alt="logo">
-    </a>
-    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
-      <span class="navbar-toggler-icon"></span>
-    </button>
-    <div class="collapse navbar-collapse" id="navbarSupportedContent">
-      <ul class="navbar-nav mx-auto mb-2 mb-lg-0">
-        <li class="nav-item me-3">
-          <a class="nav-link px-5 py-2" href="#">服務方案</a>
-        </li>
-        <li class="nav-item me-3">
-          <a class="nav-link px-5 py-2" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link px-5 py-2" href="#">聯絡我們</a>
-        </li>
-      </ul>
-    </div>
-    <a href="user.html">
-        <img src="/2025_week6/assets/avatar-QGHQ479s.png" alt="avatar" class="user-image rounded-circle me-2 border">Mokumaru</a>
-  </div>
-</nav>
-
+    <%- include('./layout/header-avatar'); -%>
     <main class="bg-natural-95">
 <!--nav&tab-->
     <div class="container py-7">
@@ -94,7 +67,7 @@
               <div class="w-100">
       <!--上傳頭貼-->
                 <div class="d-flex align-items-end mb-5">
-                  <img src="/2025_week6/assets/avatar-QGHQ479s.png"  
+                  <img src="/assets/images/avatar.png"  
                        alt="avater" class="avatar-image rounded-circle border me-4">
                   <div class="d-block">
                     <label for="avatarUpload"   
@@ -779,31 +752,8 @@
 
 
 
-    <nav class="navbar navbar-expand-lg navbar-light bg-natural-95">
-  <div class="container border-top">
-    <div class="collapse navbar-collapse py-5" id="navbarText">
-      <ul class="navbar-nav me-auto mb-lg-0">
-        <li class="nav-item">
-          <a class="nav-link bg-natural-95" href="#">服務方案</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link bg-natural-95" href="#">關於職旅</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link bg-natural-95" href="#">聯絡我們</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link bg-natural-95" href="#">隱私權政策</a>
-        </li>
-        <li class="nav-item">
-          <a class="nav-link bg-natural-95" href="#">用戶條款</a>
-        </li>
-      </ul>
-      <span class="navbar-text">
-        Copyright © 2025 職旅 workway. All rights reserved.
-      </span>
-    </div>
-  </div>
-</nav>
+    <%- include('./layout/footer'); -%>
+
+    <script type="module" src="../main.js"></script>
   </body>
 </html>

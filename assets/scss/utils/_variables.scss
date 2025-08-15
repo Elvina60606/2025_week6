@@ -438,8 +438,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-//$enable-rfs:                  true !default;
-$enable-rfs:                  false;
+$enable-rfs:                  false;//true !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -480,11 +479,11 @@ $spacers: (
   0: 0,
   1: $spacer * .25,
   2: $spacer * .5,
-  3: $spacer * .75,
-  4: $spacer,
-  5: $spacer * 1.5,
-  6: $spacer * 3,
-  7: $spacer * 5,
+  3: $spacer * .75, //12
+  4: $spacer,       //16px
+  5: $spacer * 1.5, //24
+  6: $spacer * 3,   //48
+  7: $spacer * 5,   //80
 ) !default;
 // scss-docs-end spacer-variables-maps
 
@@ -557,7 +556,8 @@ $grid-breakpoints: (
   xs: 0,
   sm: 576px,
   md: 768px,
-  lg: 992px,
+  //lg: 992px,
+  lg: 1024px,
   xl: 1200px,
   xxl: 1400px
 ) !default;
@@ -723,7 +723,7 @@ $font-sizes: (
   3: $h3-font-size,
   4: $h4-font-size,
   5: $h5-font-size,
-  6: $h6-font-size
+  6: $h6-font-size,
 ) !default;
 // scss-docs-end font-sizes
 
@@ -1290,7 +1290,7 @@ $nav-underline-link-active-color:   var(--#{$prefix}emphasis-color) !default;
 $navbar-padding-y:                  $spacer * .5 !default;
 $navbar-padding-x:                  null !default;
 
-$navbar-nav-link-padding-x:         .5rem !default;
+$navbar-nav-link-padding-x:         24px;//.5rem !default;
 
 $navbar-brand-font-size:            $font-size-lg !default;
 // Compute the navbar-brand padding-y so the navbar-brand will have the same height as navbar-text and nav-link
@@ -1642,7 +1642,8 @@ $modal-footer-border-width:         $modal-header-border-width !default;
 $modal-sm:                          300px !default;
 $modal-md:                          500px !default;
 $modal-lg:                          800px !default;
-$modal-xl:                          1140px !default;
+//$modal-xl:                          1140px !default;
+$modal-xl:                          1200px;
 
 $modal-fade-transform:              translate(0, -50px) !default;
 $modal-show-transform:              none !default;
@@ -1811,9 +1812,9 @@ $spinner-border-width-sm: .2em !default;
 // Close
 
 // scss-docs-start close-variables
-$btn-close-width:            1em !default;
+$btn-close-width:            1.5em;//1em !default;
 $btn-close-height:           $btn-close-width !default;
-$btn-close-padding-x:        .25em !default;
+$btn-close-padding-x:        10px;//.25em !default;
 $btn-close-padding-y:        $btn-close-padding-x !default;
 $btn-close-color:            $black !default;
 $btn-close-bg:               url("data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16' fill='#{$btn-close-color}'><path d='M.293.293a1 1 0 0 1 1.414 0L8 6.586 14.293.293a1 1 0 1 1 1.414 1.414L9.414 8l6.293 6.293a1 1 0 0 1-1.414 1.414L8 9.414l-6.293 6.293a1 1 0 0 1-1.414-1.414L6.586 8 .293 1.707a1 1 0 0 1 0-1.414z'/></svg>") !default;
