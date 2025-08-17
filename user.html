@@ -8,8 +8,8 @@
     <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet">
   
 
-    <script type="module" crossorigin src="/2025_week6/assets/main-BCC4Hn7v.js"></script>
-    <link rel="stylesheet" crossorigin href="/2025_week6/assets/main-D0BwqZCx.css">
+    <script type="module" crossorigin src="/2025_week6/assets/main-C3SEGFWk.js"></script>
+    <link rel="stylesheet" crossorigin href="/2025_week6/assets/main-Dz-RyPaS.css">
   </head>
   <body>
     <nav class="navbar navbar-expand-lg navbar-light border-bottom py-3">
@@ -46,11 +46,11 @@
 
     <main class="bg-natural-95">
 <!--nav&tab-->
-    <div class="container py-7">
+    <div class="container py-6 py-xl-7">
       <div class="row justify-content-center">
         <div class="col-10">
-          <ul class="nav nav-pills mb-5 justify-content-center" id="pills-tab" role="tablist">
-            <li class="nav-item me-5" role="presentation">
+          <ul class="nav nav-pills mb-4 mb-xl-5 justify-content-center" id="pills-tab" role="tablist">
+            <li class="nav-item me-4 me-xl-5" role="presentation">
               <button class="nav-link border active" 
                       id="pills-info-tab" 
                       data-bs-toggle="pill" 
@@ -61,7 +61,7 @@
                 <span class="material-symbols-outlined me-1 align-bottom">face</span>個人資料
               </button>
             </li>
-            <li class="nav-item me-5" role="presentation">
+            <li class="nav-item me-4 me-xl-5" role="presentation">
               <button class="nav-link border" 
                       id="pills-record-tab"  
                       data-bs-toggle="pill" 
@@ -84,22 +84,24 @@
               </button>
             </li>
           </ul>
-          <div class="tab-content bg-white rounded-3 shadow p-6"   
+          <div class="tab-content bg-white rounded-3 shadow p-5 p-xl-6"   
                id="pills-tabContent">
 <!--rounded panel-個人資料-->
         <div class="tab-pane fade show active" 
              id="pills-info" role="tabpanel" 
              aria-labelledby="pills-info-tab">
           <form>
-            <div class="d-flex gap-5 mb-6">
+            <div class="d-flex gap-5 mb-xl-6">
   <!--左側類別名稱-->
-              <div class="flex-shrink-0 side-width">
+              <div class="flex-shrink-0 side-width d-none d-xl-block">
                 <h2 class="fs-4">個人資料</h2>
               </div>
   <!--右側表單-->
               <div class="w-100">
       <!--上傳頭貼-->
-                <div class="d-flex align-items-end mb-5">
+                <h4 class="d-block d-xl-none mb-4">個人資料</h4>
+                <div class="d-flex align-items-end mb-4 mb-xl-5">
+
                   <img src="/2025_week6/assets/avatar-QGHQ479s.png"  
                        alt="avater" class="avatar-image rounded-circle border me-4">
                   <div class="d-block">
@@ -112,12 +114,12 @@
                   </div>
                 </div>
       <!--個人資料輸入-->
-                <div class="form-floating mb-5">
+                <div class="form-floating mb-4 mb-xl-5">
                   <input type="text" class="form-control" id="nameInput"  
                          placeholder="請輸入姓名" value="Mokumaru">
                   <label for="nameInput" class="text-natural-50">姓名</label>
                 </div>
-                <div class="mb-5">
+                <div class="mb-4 mb-xl-5">
                   <p class="mb-2">性別</p>
                   <div class="px-2">
                     <div class="form-check form-check-inline">
@@ -140,13 +142,13 @@
                     </div>
                   </div>
                 </div>
-                <div class="form-floating mb-5">
+                <div class="form-floating mb-4 mb-xl-5">
                   <input type="text" class="form-control" 
                           id="birthday" placeholder="請輸入生日" 
                           value="2000/01/10">
                   <label for="birthday" class="text-natural-50">生日</label>
                 </div>
-                <div class="mb-5">
+                <div class="mb-4 mb-xl-5">
                   <p class="mb-2">密碼</p>
                   <!-- Button trigger modal -->
                   <button type="button" class="btn border me-1" 
@@ -194,7 +196,7 @@
                   </div>
                 <!--密碼結尾-->
                 </div>
-                <div class="mb-5">
+                <div class= "mb-4 mb-xl-5">
                   <div class="form-floating mb-4">
                       <input type="email" class="form-control" 
                               aria-describedby="emailInput"
@@ -206,7 +208,7 @@
                       </div>
                   </div>
                 </div>
-                <div class="mb-5">
+                <div class= "mb-4 mb-xl-5">
                   <div class="form-floating mb-4">
                      <input type="tel" class="form-control" 
                             id="phoneNumInput" placeholder="xx-xxxx-xxxx" value="09-1234-5678">
@@ -214,7 +216,7 @@
                   </div>
                 </div>
                 <div>
-                  <div class="form-floating mb-5">
+                  <div class="form-floating mb-7 mb-xl-0">
                      <input type="text" class="form-control" 
                             id="addressInput" placeholder="address" 
                             value="高雄市三民區九如一路 87 號">
@@ -225,8 +227,8 @@
             </div>
           </form>
 <!--重新填寫＆儲存更新btn-->   
-            <div class="text-center">
-              <button type="button" class="btn btn-outline-dark border me-4">重新填寫
+            <div class="d-flex flex-column flex-xl-row justify-content-center">
+              <button type="button" class="btn btn-outline-dark border mb-4 mb-xl-0 me-xl-4">重新填寫
                 <span class="material-symbols-outlined align-bottom">
                   chevron_forward
                 </span>
@@ -241,40 +243,46 @@
         </div>
 <!--rounded panel-預約紀錄-->
         <div class="tab-pane fade" id="pills-record" role="tabpanel" aria-labelledby="pills-record-tab">
-           <h2 class="fs-4 mb-4">預約紀錄</h2>
-           <div class="d-flex gap-5 mb-6">
-            <div class="card w-100">
+           <h5 class="fs-xl-4 mb-4 mb-xl-5">預約紀錄</h5>
+           <div class="d-flex gap-5 mb-5 mb-xl-6">
+            <div class="card w-100 d-none d-lg-block">
               <div class="card-body p-5 text-center">
-                <h3 class="fs-2 fw-bold text-primary mb-2">3</h3>
-                <p class="text-natural-50 fs-5">已完成諮詢</p>
+                <h3 class="fs-3 fs-xl-2 fw-bold text-primary mb-2">3</h3>
+                <p class="text-natural-50 fs-6 fs-lg-5">已完成諮詢</p>
               </div> 
             </div>
             <div class="card w-100">
               <div class="card-body p-5 text-center">
-                <time class="fs-2 fw-bold text-primary mb-2">2025/10/10</time>
-                <p class="text-natural-50 fs-5">即將到來</p>
+                <time class="fs-3 fs-xl-2 fw-bold text-primary mb-2">2025/10/10</time>
+                <p class="text-natural-50 fs-6 fs-lg-5">即將到來</p>
               </div> 
             </div>
-            <div class="card w-100">
+            <div class="card w-100 d-none d-lg-block">
               <div class="card-body p-5 text-center">
-                <h3 class="fs-2 fw-bold text-primary mb-2">3/6</h3>
-                <p class="text-natural-50 fs-5">使用方案進度</p>
+                <h3 class="fs-3 fs-xl-2 fw-bold text-primary mb-2">3/6</h3>
+                <p class="text-natural-50 fs-6 fs-lg-5">使用方案進度</p>
               </div> 
             </div>
           </div>
 <!--1.預約紀錄動態btn-->
-          <div class="d-flex justify-content-between mb-5">
+          <div class="d-flex justify-content-between mb-4 mb-xl-5">
             <div>
-             <button type="button" class="btn btn-outline-dark border me-2" >全部預約
+             <button type="button" class="btn btn-outline-dark reserve border me-2">全部預約
              </button>
-             <button type="button" class="btn btn-outline-dark border me-2">已完成
+             <button type="button" class="btn btn-outline-dark reserve border me-2">已完成
              </button>
-             <button type="button" class="btn btn-outline-dark border">已取消
+             <button type="button" class="btn btn-outline-dark reserve border">已取消
              </button>
             </div>
             <div class="dropdown">
-              <button class="btn btn-outline-dark border me-1" type="button"             id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">排序
-              <span class="material-symbols-outlined me-1 align-bottom">filter_list</span>
+              <button class="btn btn-outline-dark reserve border me-1"  
+                      type="button"             
+                      id="dropdownMenuButton1" 
+                      data-bs-toggle="dropdown" 
+                      aria-expanded="false">
+              <span class="d-none d-xl-inline-block me-1">排序</span> 
+              <span class="material-symbols-outlined align-bottom"> filter_list
+              </span>
               </button>
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="dropdownMenuButton1">
                 <li><a class="dropdown-item" href="#">新到舊</a></li>
@@ -285,7 +293,14 @@
 <!--2.預約紀錄清單table-->
           <table class="table table-striped table-hover">
             <thead>
-              <tr>
+              <tr class="fz-14 d-xl-none">
+                <th scope="col">預約紀錄一覽</th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+                <th scope="col"></th>
+              </tr>
+              <tr class="d-none d-xl-table-row">
                 <th scope="col">諮詢方案</th>
                 <th scope="col">預約日期</th>
                 <th scope="col">諮詢時長</th>
@@ -294,42 +309,45 @@
               </tr>
             </thead>
             <tbody>
-              <tr>
+     <!------------------------------------->         
+              <tr class="d-none d-xl-table-row">
                 <th scope="row">職涯定位-職涯探索包 | 6/6堂</th>
                 <td>2025/11/11</td>
                 <td>60分鐘</td>
-                <td><span class="badge rounded-pill border bg-white">視訊</span></td>
+                <td>
+                  <span class="badge rounded-pill border bg-white">視訊</span>
+                </td>
                 <td>等待上課</td>
               </tr>
-              <tr>
+              <tr class="d-none d-xl-table-row">
                 <th scope="row">職涯定位-職涯探索包 | 5/6堂</th>
                 <td>2025/10/10</td>
                 <td>60分鐘</td>
                 <td><span class="badge rounded-pill border bg-white">視訊</span></td>
                 <td>等待上課</td>
               </tr>
-              <tr>
+              <tr class="d-none d-xl-table-row">
                 <th class="text-natural-60" scope="row">職涯定位-職涯探索包 | 4/6堂</th>
                 <td class="text-natural-60">2025/09/09</td>
                 <td class="text-natural-60">60分鐘</td>
                 <td class="text-natural-60"><span class="badge rounded-pill border bg-white">視訊</span></td>
                 <td class="text-natural-60">已完成</td>
               </tr>
-              <tr>
+              <tr class="d-none d-xl-table-row">
                 <th class="text-natural-60" scope="row">職涯定位-職涯探索包 | 3/6堂</th>
                 <td class="text-natural-60">2025/08/08</td>
                 <td class="text-natural-60">60分鐘</td>
                 <td class="text-natural-60"><span class="badge rounded-pill border bg-white">面對面</span></td>
                 <td class="text-natural-60">已完成</td>
               </tr>
-              <tr>
+              <tr class="d-none d-xl-table-row">
                 <th class="text-natural-60" scope="row">職涯定位-職涯探索包 | 2/6堂</th>
                 <td class="text-natural-60">2025/07/07</td>
                 <td class="text-natural-60">60分鐘</td>
                 <td class="text-natural-60"><span class="badge rounded-pill border bg-white">面對面</span></td>
                 <td class="text-natural-60">已完成</td>
               </tr>
-              <tr>
+              <tr class="d-none d-xl-table-row">
                 <th class="text-natural-60" scope="row">職涯定位-職涯探索包 | 1/6堂</th>
                 <td class="text-natural-60">2025/06/06</td>
                 <td class="text-natural-60">90分鐘</td>
@@ -344,9 +362,9 @@
             aria-labelledby="pills-plan-tab">
 <!--1.職旅計劃的概況-->
           <form>
-            <div class="d-flex gap-5 pb-6 border-bottom mb-6">
+            <div class="d-flex gap-5 pb-5 pb-lg-6 border-bottom mb-5 mb-lg-6">
   <!--左側類別名稱-->
-              <div class="flex-shrink-0 side-width">
+              <div class="flex-shrink-0 side-width d-none d-lg-block">
                 <h2 class="fs-4 mb-3">職旅計劃概況</h2>
                 <p class="text-natural-50">欄位皆為
                   <span class="badge text-white bg-danger-50 ms-1">必填</span>
@@ -354,8 +372,14 @@
               </div>
   <!--右側表單-->
               <div>
+                <div class="d-flex justify-content-between align-items-middle d-lg-none mb-4">
+                <h2 class="fs-4 mb-3 mb-lg-0">職旅計劃概況</h2>
+                <p class="text-natural-50">欄位皆為
+                  <span class="badge text-white bg-danger-50 ms-1">必填</span>
+                </p>
+              </div>
         <!--職業狀態-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <p class="mb-2">目前職業狀態</p>
                   <div class="px-2">
                     <div class="form-check form-check-inline me-5">
@@ -389,7 +413,7 @@
                   </div>
                 </div>
         <!--工作產業-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="dropdown">
                     <button class="form-select text-start" type="button" id="dropdownMenuButton1"   data-bs-toggle="dropdown" aria-expanded="false">工作產業
                     </button>
@@ -407,7 +431,7 @@
                   </div>
                 </div>
         <!--工作年資-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="dropdown">
                     <button class="form-select text-start" type="button" id="dropdownMenuButton1"   data-bs-toggle="dropdown" aria-expanded="false">工作年資
                     </button>
@@ -421,7 +445,7 @@
                   </div>
                 </div>
         <!--月收入區間-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <p class="mb-2">月收入區間</p>
                   <div class="px-2">
                     <div class="form-check form-check-inline me-5">
@@ -451,15 +475,15 @@
                   </div>
                 </div>
         <!--職業摘要-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
-                    <textarea class="form-control" placeholder="職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）" id="job-desc" style="height: 160px" maxlength="300">
+                    <textarea class="form-control w-100" placeholder="職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）" id="job-desc" style="height: 160px" maxlength="300">
                     </textarea>
                     <label for="job-desc">職業摘要（簡短描述您的專業背景和核心競爭力最多 300 字）</label>
                   </div> 
                 </div>
         <!--作品案例展示-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <input type="text" class="form-control" id="works" placeholder="作品案例展示">
                     <label for="works">作品案例展示</label>
@@ -476,9 +500,9 @@
               </div>
             </div>
 <!--2.職涯規劃-->
-            <div class="d-flex gap-5 pb-6 border-bottom mb-6">
+            <div class="d-flex gap-5 pb-5 pb-lg-6 border-bottom mb-5 mb-lg-6">
   <!--左側類別名稱-->
-              <div class="flex-shrink-0 side-width">
+              <div class="flex-shrink-0 side-width d-none d-lg-block">
                 <h2 class="fs-4 mb-3">職涯規劃</h2>
                 <p class="text-natural-50">欄位皆為
                   <span class="badge text-white bg-danger-50 ms-1">必填</span>
@@ -486,8 +510,14 @@
               </div>
   <!--右側表單-->
               <div>
+                <div class="d-flex justify-content-between align-items-middle d-lg-none mb-4">
+                <h2 class="fs-4 mb-3 mb-lg-0">職涯規劃</h2>
+                <p class="text-natural-50">欄位皆為
+                  <span class="badge text-white bg-danger-50 ms-1">必填</span>
+                </p>
+              </div>
       <!--1年短期職涯目標-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="1 年短期職涯目標（最多 300 字）" id="workplan-1"  style="height: 160px" maxlength="300">
                     </textarea>
@@ -495,7 +525,7 @@
                   </div>
                 </div>
       <!--1-3年中長期職涯願景-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="1-3 年中長期職涯願景（最多 300 字）" id="workplan-2"  style="height: 160px" maxlength="300">
                     </textarea>
@@ -503,7 +533,7 @@
                   </div>
                 </div>
       <!--理想工作模式-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <p class="mb-2">理想工作模式</p>
                   <div class="px-2">
                     <div class="form-check form-check-inline me-5">
@@ -529,16 +559,16 @@
                   </div>              
                 </div>
       <!--目標薪資/收入-->           
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <input type="text" class="form-control" id="dalary" placeholder="目標薪資/收入">
                     <label for="dalary">目標薪資/收入</label>
                   </div>
                 </div>
       <!--目前面臨的職涯挑戰-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <p class="mb-2">目前面臨的職涯挑戰</p>
-                  <div class="px-2" style="white-space: nowrap">
+                  <div class="px-2">
                     <div class="form-check form-check-inline me-5">
                       <input class="form-check-input" type="checkbox" id="challenge-1" value="challenge-1">
                       <label class="form-check-label" for="challenge-1">方向不明確</label>
@@ -559,7 +589,6 @@
                       <input class="form-check-input" type="checkbox" id="challenge-5" value="challenge-5">
                       <label class="form-check-label" for="challenge-5">時間管理問題</label>
                     </div>
-                  </br>
                     <div class="form-check form-check-inline me-5">
                       <input class="form-check-input" type="checkbox" id="challenge-6" value="challenge-6">
                       <label class="form-check-label" for="challenge-6">工作生活失衡</label>
@@ -575,7 +604,7 @@
                   </div>
                 </div>
       <!--期望獲得的協助與資源-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <p class="mb-2">期望獲得的協助與資源</p>
                   <div class="px-2">
                     <div class="form-check form-check-inline me-5">
@@ -614,6 +643,12 @@
                       <input class="form-check-input" type="checkbox" id="assistance-9" value="assistance-9">
                       <label class="form-check-label" for="assistance-9">其他(請說明)</label>
                     </div>
+
+
+
+
+
+
                   </div>
                 </div>
       <!--感興趣的服務方案-->
@@ -639,14 +674,18 @@
 <!--3.專業技能區塊-->
             <div class="d-flex gap-5 pb-6 border-bottom mb-6">
   <!--左側類別名稱-->
-              <div class="flex-shrink-0 side-width">
+              <div class="flex-shrink-0 side-width d-none d-lg-block">
                 <h2 class="fs-4 mb-3">專業技能區塊</h2>
                 <p class="text-natural-50">欄位皆為選填</p>
               </div>
   <!--右側表單-->
               <div>
+                <div class="d-flex justify-content-between align-items-middle d-lg-none mb-4">
+                <h2 class="fs-4 mb-3 mb-lg-0">專業技能區塊</h2>
+                <p class="text-natural-50">欄位皆為選填</p>
+              </div>
       <!--核心專業領域-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <p class="mb-2">核心專業領域</p>
                   <div class="px-2">
                     <div class="form-check form-check-inline me-5">
@@ -692,7 +731,7 @@
                   </div>
                 </div>
       <!--專業背景和核心競爭力-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="專業背景和核心競爭力（最多300字）" 
                               id="background-desc" style="height: 160px" maxlength="300">
@@ -701,7 +740,7 @@
                   </div>
                 </div>  
       <!--專業技能-->  
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="專業技能（最多300字）" 
                               id="professionalSkill-desc" style="height: 160px" maxlength="300">
@@ -710,7 +749,7 @@
                   </div>
                 </div>  
       <!--語文能力-->
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="語文能力（最多300字）" 
                               id="languageSkill-desc" style="height: 160px" maxlength="300">
@@ -732,13 +771,18 @@
 <!--4.教育背景-->
             <div class="d-flex gap-5 mb-6">
   <!--左側類別名稱-->
-              <div class="flex-shrink-0 side-width">
+              <div class="flex-shrink-0 side-width d-none d-lg-block">
                 <h2 class="fs-4 mb-3">教育背景</h2>
                 <p class="text-natural-50">欄位皆為選填</p>
               </div>
   <!--右側表單-->
+            <div class="w-100">
+              <div class="d-flex justify-content-between align-items-middle d-lg-none mb-4">
+                <h2 class="fs-4 mb-3 mb-lg-0">教育背景</h2>
+                <p class="text-natural-50">欄位皆為選填</p>
+              </div>
               <div class="w-100">
-                <div class="mb-5">
+                <div class="mb-4 mb-lg-5">
                   <div class="form-floating">
                     <textarea class="form-control" placeholder="學歷背景（最多500字）" 
                               id="education-desc" style="height: 160px" maxlength="500">
@@ -754,10 +798,11 @@
                   <label for="trainingCentre-desc">專業培訓與工作坊（最多500字）</label>
                 </div>
               </div>
+              </div>
             </div>      
 <!--匯出＆儲存btn--->
-            <div class="text-center">
-              <button type="button" class="btn btn-outline-dark border me-4">匯出 PDF 
+            <div class="d-flex flex-column flex-xl-row justify-content-center">
+              <button type="button" class="btn btn-outline-dark border mb-4 mb-xl-0 me-xl-4">匯出 PDF 
                 <span class="material-symbols-outlined  align-bottom ms-1">chevron_forward
                 </span>
               </button>
@@ -766,16 +811,12 @@
                 </span>
               </button>
             </div>
-           </form>
+          </form>
 
 
 
 
         </div>
-
-
-
-
           </div>
         </div>
       </div>
