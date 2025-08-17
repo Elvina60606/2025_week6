@@ -4,16 +4,482 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>index</title>
+    <title>聯絡我們</title>
+    <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined" rel="stylesheet" />
+
+
   </head>
   <body>
     <%- include('./layout/header'); -%>
+    <div class="main bg-natural-95">
+        <div class="container py-6 py-lg-7">
+            <div class="row justify-content-center">
+                <div class="col-10">
+            <div class="mb-5 mb-lg-6 text-center">
+                <h3 class="fs-lg-2 mb-4 mb-lg-5">聯絡我們</h3>
+                <p class="fs-lg-5 text-natural-50">每一封郵件，我們都會親自回覆。每一通電話，都是新可能的開始。</p>
+            </div>
+ <!----------tab-content------------->
+            <div class="bg-white p-5 p-lg-6 rounded-3 position-relative">
+<!----------基本資料---------->
+                <section class="d-flex pb-5 pb-lg-6 mb-5 mb-lg-6 border-bottom">
+        <!--左側類別名稱-->
+                    <div class="side-width flex-shrink-1 me-5 d-none d-lg-block">
+                        <h4 class="mb-3">基本資料</h4>
+                        <p class="text-natural-50">欄位皆為
+                            <span class="badge bg-danger-50 text-white rounded-pill">必填</span>
+                        </p>
+                    </div>
+        <!--右側表單-->
+                    <form class="w-100">
+                        <div class="d-flex justify-content-between d-lg-none mb-4">
+                            <h4 class="mb-3">基本資料</h4>
+                            <p class="text-natural-50 fz-14">欄位皆為
+                                <span class="badge bg-danger-50 text-white rounded-pill">必填</span>
+                            </p>
+                        </div>
+                        <div class="form-floating mb-4 mb-lg-5">
+                            <input type="text" class="form-control" 
+                                   id="nameInput" 
+                                   placeholder="姓名">
+                            <label for="nameInput">姓名</label>
+                        </div>
+                        <div class="form-floating mb-4 mb-lg-5">
+                            <input type="password" class="form-control"         
+                                   id="emailInput" 
+                                   placeholder="信箱"
+                                   aria-describedby="emailHelp">
+                            <label for="emailInput">信箱</label>
+                            <div id="emailHelp" class="form-text px-2">盡量勿使用Yahoo或Hotmail郵件信箱，以免因擋信、漏信</div>
+                        </div>
+                        <div class="form-floating mb-4 mb-lg-5">
+                            <input type="tel" class="form-control"         
+                                   id="telInput" 
+                                   placeholder="電話"
+                                   aria-describedby="telHelp">
+                            <label for="telInput">信箱</label>
+                            <div id="telHelp" class="form-text px-2">我們不會以電話主動聯繫您，告知您要至ATM操作轉帳</div>
+                        </div>
+                        <div class="dropdown">
+                            <button class="form-select text-start" type="button" 
+                                    id="dropdownMenu2" 
+                                    data-bs-toggle="dropdown" 
+                                    aria-expanded="false">
+                                    目前職業/工作身分
+                            </button>
+                            <ul class="dropdown-menu w-100" aria-labelledby="dropdownMenu2">
+                              <li><button class="dropdown-item" type="button">正職</button></li>
+                              <li><button class="dropdown-item" type="button">兼職</button></li>
+                              <li><button class="dropdown-item" type="button">自由接案</button></li>
+                            </ul>
+                        </div>
+                    </form>
+                </section>   
+<!----------諮詢需求---------->
+                <section class="d-flex pb-5 pb-lg-6 mb-5 mb-lg-6 border-bottom">
+         <!--左側類別-->
+                    <div class="side-width flex-shrink-1 me-5 d-none d-lg-block">
+                        <h4 class="mb-3">諮詢需求</h4>
+                        <p class="text-natural-50">欄位皆為
+                            <span class="badge bg-danger-50 text-white rounded-pill">必填</span>
+                        </p>
+                    </div>
+         <!--右側表單-->
+                    <form class="w-100">
+                        <div class="d-flex justify-content-between d-lg-none mb-4">
+                            <h4 class="mb-3">諮詢需求</h4>
+                            <p class="text-natural-50 fz-14">欄位皆為
+                                <span class="badge bg-danger-50 text-white rounded-pill">必填</span>
+                            </p>
+                        </div>
+                        <div class="mb-4 mb-lg-5">
+                            <p class="mb-2">諮詢主題</p>
+                            <div class="px-2">
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input"     
+                                         type="checkbox" 
+                                         id="careerDirection">
+                                  <label class="form-check-label" 
+                                         for="careerDirection">
+                                         職涯探索與方向
+                                  </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input"     
+                                         type="checkbox" 
+                                         id="freeLancer">
+                                  <label class="form-check-label" 
+                                         for="freeLancer">
+                                         接案與技能變現
+                                  </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input"     
+                                         type="checkbox" 
+                                         id="brandManagement">
+                                  <label class="form-check-label" 
+                                         for="brandManagement">
+                                         品牌與內容經營
+                                  </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input"     
+                                         type="checkbox" 
+                                         id="remote">
+                                  <label class="form-check-label" 
+                                         for="remote">
+                                         遠端工作與數位游牧
+                                  </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input"     
+                                         type="checkbox" 
+                                         id="timeManagement">
+                                  <label class="form-check-label" 
+                                         for="timeManagement">
+                                         收入與時間管理
+                                  </label>
+                              </div>
+                              <div class="form-check form-check-inline">
+                                  <input class="form-check-input"     
+                                         type="checkbox" 
+                                         id="other">
+                                  <label class="form-check-label" 
+                                         for="other">
+                                         其他（請填寫下題）
+                                  </label>
+                              </div>
+                            </div>
+                            <p class="fz-14 text-natural-50 px-2">可複選，讓我們更了解你的狀況，安排最適合的顧問與建議。</p>
+                        </div>
+                        <div class="dropdown mb-4 mb-lg-5">
+                            <button class="form-select text-start"  
+                                    type="button" 
+                                    id="consulter" 
+                                    data-bs-toggle="dropdown" 
+                                    aria-expanded="false">
+                                    期望諮詢的專家
+                            </button>
+                            <ul class="dropdown-menu w-100"     
+                                aria-labelledby="consulter">
+                              <li>
+                                <button class="dropdown-item" type="button">Amanda</button>
+                              </li>
+                              <li><button class="dropdown-item" type="button">David</button></li>
+                              <li><button class="dropdown-item" type="button">Jocelyn</button></li>
+                            </ul>
+                        </div>
+                        <div class="form-floating mb-4 mb-lg-5">
+                            <textarea class="form-control"
+                                      style="height: 160px" 
+                                      placeholder="您目前面臨的主要挑戰" 
+                                      id="currentChallenge">
+                            </textarea>
+                            <label for="currentChallenge">您目前面臨的主要挑戰</label>
+                        </div>
+                        <div class="form-floating">
+                            <textarea class="form-control"
+                                      style="height: 160px" 
+                                      placeholder="期望達成的目標" 
+                                      id="expectedGoal">
+                            </textarea>
+                            <label for="expectedGoal">期望達成的目標</label>
+                        </div>
+                    </form>
+                </section>
+<!--------------聯絡偏好--------------->
+                <section class="d-flex mb-5 mb-lg-6">
+           <!--左側類別-->
+                    <div class="side-width flex-shrink-1 me-5 d-none d-lg-block">
+                        <h4 class="mb-3">聯絡偏好</h4>
+                        <p class="text-natural-50">欄位皆為選填</p>
+                    </div>
+           <!--右側表單-->
+                    <form class="w-100">
+                        <div class="d-flex justify-content-between d-lg-none mb-4">
+                            <h4 class="mb-3">聯絡偏好</h4>
+                            <p class="text-natural-50">欄位皆為選填</p>
+                        </div>
+                        <div class="mb-4 mb-lg-5">
+                            <p class="mb-2">諮詢主題</p>
+                            <div class="px-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="radio" 
+                                           name="contact" 
+                                           id="email" 
+                                           value="email">
+                                    <label class="form-check-label" for="email">信箱
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="radio" 
+                                           name="contact" 
+                                           id="tel" 
+                                           value="tel">
+                                    <label class="form-check-label" for="tel">電話</label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="radio" 
+                                           name="contact" 
+                                           id="line" 
+                                           value="line">
+                                    <label class="form-check-label" for="line">LINE
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="radio" 
+                                           name="contact" 
+                                           id="discord" 
+                                           value="discord">
+                                    <label class="form-check-label"         
+                                           for="discord">discord</label>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="mb-4 mb-lg-5">
+                            <p class="mb-2">偏好聯絡時段</p>
+                            <div class="px-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="weekdayAM" 
+                                           value="weekdayAM">
+                                    <label class="form-check-label"     
+                                           for="weekdayAM">平日上午(9:00-12:00)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="weekdayPM" 
+                                           value="weekdayPM">
+                                    <label class="form-check-label"     
+                                           for="weekdayPM">平日下午(13:00-17:00)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="weekdayNight" 
+                                           value="weekdayNight">
+                                    <label class="form-check-label"     
+                                           for="weekdayNight">平日晚上(18:00-21:00)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="weekendAM" 
+                                           value="weekendAM">
+                                    <label class="form-check-label"     
+                                           for="weekendAM">週末上午(9:00-12:00)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="weekendPM" 
+                                           value="weekendPM">
+                                    <label class="form-check-label"     
+                                           for="weekendPM">週末下午(13:00-17:00)
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="weekendNight" 
+                                           value="weekendNight">
+                                    <label class="form-check-label"     
+                                           for="weekendNight">週末晚上(18:00-21:00)
+                                    </label>
+                                </div>
+                                <p class="fz-14 text-natural-50 px-2">建議您可以勾選 2 個時段以上</p>
+                            </div>
+                        </div>
+                        <div class="mb-4 mb-lg-5">
+                            <div class="input-group mb-3">
+                                <input type="text" 
+                                       class="form-control border-end-0" 
+                                       placeholder="預約諮詢時間" 
+                                       aria-label="預約諮詢時間" 
+                                       aria-describedby="dateButton">
+                                <button class="btn border border-start-0" 
+                                        type="button" 
+                                        id="dateButton">
+                                    <span class="material-symbols-outlined">
+                                          calendar_month
+                                    </span>
+                                </button>
+</div>
+                        </div>
+                        <div class="mb-4 mb-lg-5">
+                            <p class="mb-2">如何得知我們</p>
+                            <div class="px-2">
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="google" 
+                                           value="google">
+                                    <label class="form-check-label" for="google">
+                                        Google 搜尋
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="instagram" 
+                                           value="instagram">
+                                    <label class="form-check-label" for="instagram">
+                                        Instagram
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="facebook" 
+                                           value="facebook">
+                                    <label class="form-check-label" for="facebook">
+                                        Facebook
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="threads" 
+                                           value="threads">
+                                    <label class="form-check-label" for="threads">
+                                        Threads
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="youTube" 
+                                           value="youTube">
+                                    <label class="form-check-label" for="youTube">
+                                        YouTube
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="podcast" 
+                                           value="podcast">
+                                    <label class="form-check-label" for="podcast">
+                                        Podcast / 節目推薦
+                                    </label>
+                                </div>
+                                 <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="recommand" 
+                                           value="recommand">
+                                    <label class="form-check-label" for="recommand">
+                                        朋友或同事推薦
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="participant" 
+                                           value="participant">
+                                    <label class="form-check-label" for="participant">
+                                        曾參加職旅活動 / 工作坊
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="introduction" 
+                                           value="introduction">
+                                    <label class="form-check-label" for="introduction">
+                                        職涯顧問介紹
+                                    </label>
+                                </div>
+                                <div class="form-check form-check-inline">
+                                    <input class="form-check-input" 
+                                           type="checkbox" 
+                                           id="other" 
+                                           value="other">
+                                    <label class="form-check-label" for="other">
+                                        其他（請填寫下題）
+                                    </label>
+                                </div>
+                                <p class="fz-14 text-natural-50 px-2">最多勾選3個</p>
 
-<a href="user.html">使用者頁面</a>
-<hr>
-<a href="privacy.html">隱私權政策頁面</a>
-<hr>
-<a href="agreement.html">用戶條款</a>
+
+
+                            </div>
+                        </div>
+                        <div class="mb-4 mb-lg-5">
+                            <div class="form-floating">
+                                <textarea class="form-control" 
+                                          placeholder="Leave a comment here" 
+                                          id="wantToSay"
+                                          style="height: 160px"
+                                          maxlength="300">
+                                </textarea>
+                                <label for="wantToSay">有什麼其他想告訴我們的事情嗎？（最多300字）</label>
+                            </div>
+                        </div>
+                        <div>
+                            <div class="form-check">
+                                <input class="form-check-input" 
+                                       type="checkbox" 
+                                       id="receiveNews">
+                                <label class="form-check-label" 
+                                       for="receiveNews">
+                                    我願意接收職旅最新資訊和專業內容
+                                </label>
+                            </div>
+                            <div class="form-check">
+                                <input class="form-check-input" 
+                                       type="checkbox" 
+                                       id="receiveNews">
+                                <label class="form-check-label" 
+                                       for="receiveNews">
+                                       我同意
+                                    <a href="agreement.html" class="text-primary-60 text-decoration-underline">服務條款</a>
+                                       和
+                                    <a href="privacy.html" class="text-primary-60 text-decoration-underline">隱私政策</a>
+                                </label>
+                            </div>
+                        </div>
+                    </form>
+                </section>
+<!-----------重新填寫＆確認送出 btn-------->
+                <div class="d-flex flex-column flex-xl-row justify-content-center">
+                            <button type="button" 
+                                    class="btn btn-outline-dark border mb-4 mb-xl-0 me-xl-4">
+                                    重新填寫 
+                                <span class="material-symbols-outlined align-bottom ms-1">  
+                                    chevron_forward
+                                </span>
+                            </button>
+                            <button type="button" 
+                                    class="btn btn-outline-dark border align-bottom">
+                                    確認送出
+                                <span class="material-symbols-outlined align-bottom ms-1">  
+                                    chevron_forward
+                                </span>
+                            </button>
+                </div>
+<!---tab end--->
+                <img class="position-absolute form-top-img d-none d-lg-block" 
+                     src="../assets/images/form-top.svg"  
+                     alt="form-top">
+            </div>
+
+
+                </div>
+            </div>
+        </div>
+    </div>
+
     
 
     <%- include('./layout/footer'); -%>

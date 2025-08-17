@@ -438,7 +438,7 @@ $enable-grid-classes:         true !default;
 $enable-container-classes:    true !default;
 $enable-cssgrid:              false !default;
 $enable-button-pointers:      true !default;
-$enable-rfs:                  false;//true !default;
+$enable-rfs:                  true !default;
 $enable-validation-icons:     true !default;
 $enable-negative-margins:     false !default;
 $enable-deprecation-messages: true !default;
@@ -738,18 +738,28 @@ $headings-color:              inherit !default;
 // scss-docs-end headings-variables
 
 // scss-docs-start display-headings
+//$display-font-sizes: (
+// 1: 5rem,
+// 2: 4.5rem,
+// 3: 4rem,
+// 4: 3.5rem,
+// 5: 3rem,
+// 6: 2.5rem
+//) !default;
+
 $display-font-sizes: (
-  1: 5rem,
-  2: 4.5rem,
-  3: 4rem,
-  4: 3.5rem,
-  5: 3rem,
-  6: 2.5rem
-) !default;
+  1: 5rem,   // 80px
+  2: 4.5rem, // 72
+  3: 4rem,   // 64
+  4: 3.5rem, // 56
+  5: 3rem,   // 48
+  6: 2rem    // 32
+) ;
 
 $display-font-family: null !default;
 $display-font-style:  null !default;
-$display-font-weight: 300 !default;
+//$display-font-weight: 300 !default;
+$display-font-weight: 700 !default;
 $display-line-height: $headings-line-height !default;
 // scss-docs-end display-headings
 
@@ -1063,7 +1073,8 @@ $form-check-input-disabled-opacity:        .5 !default;
 $form-check-label-disabled-opacity:        $form-check-input-disabled-opacity !default;
 $form-check-btn-check-disabled-opacity:    $btn-disabled-opacity !default;
 
-$form-check-inline-margin-end:    1rem !default;
+//$form-check-inline-margin-end:    1rem !default;
+$form-check-inline-margin-end:    1.5rem;
 // scss-docs-end form-check-variables
 
 // scss-docs-start form-switch-variables

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>首頁</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+  </head>
+  <body>
+    <%- include('./layout/header'); -%>
+    <main>
+    <!-----section1-banner 文字------>
+    <section class="py-6 py-lg-7">
+      <div class="container mb-6 mb-lg-5">
+        <div class="row justify-content-center">
+          <div class="col-lg-8">
+            <h2 class="display-2 display-lg-1 text-natural-10 mb-4 text-center">
+              一起陪伴、探索
+              <br>還有你那些未完成的夢
+            </h2>
+            <div class="d-flex flex-column flex-lg-row align-items-center justify-content-lg-between">
+              <div class="mb-4 mb-lg-0 text-center text-lg-start">
+                <p class="fs-lg-5 text-natural-50">自由工作很美，也很難。</p>
+                <p class="fs-lg-5 text-natural-50">我們用 1 對 1 陪伴，陪你從第一步開始，直到夢想變成日常</p>
+              </div>
+              <a href="#">
+                <button type="button" class="btn btn-secondary-50 fs-lg-4 px-3 px-lg-4 fw-bold">開始你的職旅
+                  <i class="bi bi-chevron-right"></i>
+              </button>
+              </a>
+              
+            </div>
+          </div>
+        </div>
+      </div>
+    <!-------banner 三格圖------>
+      <div class="container-fluid">
+        <div class="row">
+          <div class="d-none d-lg-block col-lg">
+            <img src="../assets/images/hero-1.png" alt="hero-1">
+          </div>
+          <div class="d-none d-lg-block col-lg">
+            <div class="d-flex flex-column gap-5">
+              <img src="../assets/images/hero-2.png" alt="hero-2">
+              <img src="../assets/images/hero-3.png" alt="hero-3">
+            </div>
+          </div>
+          <div class="col-lg">
+            <img src="../assets/images/hero-4.png" alt="hero-4">
+          </div>
+        </div>
+      </div>
+    </section>
+    <!------section2------->
+    <section class="py-6 py-lg-7">
+      <div class="container">
+        <div class="row flex-nowrap">
+          <div class="col-lg-4 align-content-center">
+            <div class="mb-4 mb-lg-0">
+              <img class="mb-4 mb-lg-5" src="../assets/images/logo-icon.svg" alt="logo-icon">
+              <p class="fs-2 fs-lg-1 mb-4">他們已經踏上職旅聽聽他們的故事</p>
+              <p class="fs-6 fs-lg-5 text-natural-50">每一段職涯轉型都有獨特挑戰，這些曾經與你有相同疑惑的夥伴，現在正過著他們嚮往的生活</p>
+            </div>
+          </div>
+          <div class="col-lg-8">
+             <div class="swiper mySwiper mb-3">
+               <div class="swiper-wrapper">
+                 <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4">
+                    <img src="../assets/images/story-cover-1.png" 
+                         class="mb-3" alt="story-cover-1">
+                    <div class="p-3">
+                        <h3 class="fs-4 mb-3">轉型成功的設計師</h3>
+                        <p class="mb-3">從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
+                      <div class="d-flex">
+                          <h4 class="">視覺設計師</h4>
+                          <p class="border-start ps-2">郭敏迪 (34y)</p>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4">
+                    <img src="../assets/images/story-cover-2.png" 
+                         class="mb-3" alt="story-cover-2">
+                    <div class="p-3">
+                        <h3 class="fs-4  mb-3">數位遊牧生活實踐者</h3>
+                        <p class="mb-3">兩年前我只想環遊世界，卻不知道怎麼開始。職旅給了我遠端工作與生活規劃的指導。現在我在五個國家工作過，收入比以前多 20%。每次打開電腦，看見窗外不同的風景，都慶幸當初那一個決定。</p>
+                        <div class="d-flex">
+                            <h4 class="">內容策略師</h4>
+                            <p class="border-start ps-2">林雨潔 (29y)</p>
+                        </div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4">
+                    <img src="../assets/images/story-cover-3.png" 
+                         class="mb-3" alt="story-cover-3">
+                    <div class="p-3">
+                        <h3 class="fs-4  mb-3">中年轉型的工程師</h3>
+                        <p class="mb-3">59 歲被裁員時，我以為職涯結束了。職旅顧問不只幫我轉職，更讓我相信自己還有價值。現在我每月穩定接案、收入翻倍。年齡不是限制，只是我還沒找到對的方向。</p>
+                      <div class="d-flex">
+                          <h4 class="">系統架構顧問</h4>
+                          <p class="border-start ps-2">張世明 (62y)</p>
+                      </div>
+                    </div>
+                 </div>
+                 <div class="swiper-slide overflow-hidden shadow rounded-4 pb-4">
+                      <img src="../assets/images/story-cover-4.png" 
+                           class="mb-3" alt="story-cover-4">
+                      <div class="p-3">
+                        <h3 class="fs-4  mb-3">轉型成功的設計師</h3>
+                        <p class="mb-3">從企業設計師轉職自由接案，比我想的難太多。收入不穩時我幾乎想放棄，是職旅顧問幫我找回方向與差異化。半年後，我不僅維持收入，還能自由挑案，最重要的是，我終於有時間陪爸媽。</p>
+                        <div class="d-flex">
+                            <h4 class="">視覺設計師</h4>
+                            <p class="border-start ps-2">郭敏迪 (34y)</p>
+                        </div>
+                      </div>
+                 </div>
+         
+
+
+
+
+                </div>
+              </div>
+            </div>
+
+   <!-------row end---------->       
+        </div>
+      </div>
+    </section>
+
+
+
+
+
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    <section></section>
+    </main>
+
+    <%- include('./layout/footer'); -%>
+    
+    <script>
+      var swiper = new Swiper(".mySwiper", {
+        spaceBetween: 30,
+        pagination: {
+          el: ".swiper-pagination",
+          clickable: true,
+        },
+      });
+      </script>
+    
+    <script type="module" src="../main.js"></script>
+    
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-element-bundle.min.js"></script>
+
+
+  </body>
+</html>

@@ -1,3 +1,4 @@
+
 .side-width{
     width: 300px;
 }
@@ -10,14 +11,23 @@
     max-width: 480px;
 }
 
-.nav-link{
-    background: $white;
-    padding: 12px 20px;
-}
+
 .form-check-label{
     font-size: 14px;
 }
 
+.nav-link{
+    background: $white;
+    padding: 12px 20px;
+}
+
+@media (max-width:1200px) {
+    .nav-link, 
+    .reserve {
+        padding: 12px 12px;
+        font-size: 14px;  
+        }
+    }
 
 
 
